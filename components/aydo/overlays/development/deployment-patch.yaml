@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: aydo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xzju-tenant/byoc-app-qaas/aydo@sha256:cb8acaf17ab3aeadafad00436bc41c04df4887650208e53ee4addc256ec78331
+        name: my-java-quarkus
+        resources: {}
+status: {}
